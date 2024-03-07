@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/reactiveweather/static/css/main.d0f6a4ac.css",
+    "main.js": "/reactiveweather/static/js/main.31995ed1.js",
+    "static/js/453.5c7cd5ec.chunk.js": "/reactiveweather/static/js/453.5c7cd5ec.chunk.js",
+    "index.html": "/reactiveweather/index.html",
+    "main.d0f6a4ac.css.map": "/reactiveweather/static/css/main.d0f6a4ac.css.map",
+    "main.31995ed1.js.map": "/reactiveweather/static/js/main.31995ed1.js.map",
+    "453.5c7cd5ec.chunk.js.map": "/reactiveweather/static/js/453.5c7cd5ec.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d0f6a4ac.css",
+    "static/js/main.31995ed1.js"
+  ]
+}
