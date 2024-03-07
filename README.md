@@ -1,70 +1,59 @@
-# Getting Started with Create React App
+# Reactive Weather
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+This project was based on [this tutorial by freeCodeCamp.org](https://www.youtube.com/watch?v=Reny0cTTv24).
 
-In the project directory, you can run:
+## What I did differently
 
-### `npm start`
+Below is a list of what I did differently from the tutorial that this project is based on:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### `Color Scheme & Styling`
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The color scheme that I chose was inspired by
+[this Vue Theme for VS Code](https://marketplace.visualstudio.com/items?itemName=mariorodeghiero.vue-theme).
 
-### `npm test`
+### `Change to Display Fahrenheit & Imperial instead of Celsius & Metric`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The tutorial used Celsius and Metric for the units of measurement of displaying the weather data.\
+In order to change the units of measurement displayed for the weather data to Fahrenheit and Imperial, this required me to read
+[OpenWeatherMap's API documentation on current weather data](https://openweathermap.org/current#data).
 
-### `npm run build`
+### `Change Cities Displayed Based on Population`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The tutorial used an optional parameter to only display cities with a minimum population of 1,000,000.\
+This was an attempt to improve load times. This is fine. However, this doesn't help my purpose.
+My purpose is to use this for cities which have a much smaller population as well.
+In order to do this, I read the [documentation for the GeoDB Cities API on Rapid API for the Cities endpoint](https://rapidapi.com/wirefreethought/api/geodb-cities/)
+and referenced the minPopulation optional parameter. I changed the minPopulation optional paramter to 1,000 for my specific purpose.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
+### APIs & Packages used, & Other External Links
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+### OpenWeather API
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+[OpenWeather API Homepage](https://openweathermap.org/)
+[Current weather data](https://openweathermap.org/current)
 
-### Analyzing the Bundle Size
+### GeoDB Cities API
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+[GeoDB Cities API on Rapid API](https://rapidapi.com/wirefreethought/api/geodb-cities/)
 
-### Making a Progressive Web App
+### react-accessible-accordion
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+[react-accessible-accordion on NPM](https://www.npmjs.com/package/react-accessible-accordion)
 
-### Advanced Configuration
+### react-select-async-paginate
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+[react-select-async-paginate on NPM](https://www.npmjs.com/package/react-select-async-paginate)
 
-### Deployment
+### The Tutorial that this Project is based on
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+[This tutorial by freeCodeCamp.org](https://www.youtube.com/watch?v=Reny0cTTv24).
 
-### `npm run build` fails to minify
+### The repo for the Tutorial that this project is based on
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[react-weather-app code repo](https://github.com/bobangajicsm/react-weather-app)
